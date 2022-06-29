@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Papa from "papaparse";
 import {
@@ -22,9 +22,8 @@ import {
   Container,
   Heading,
   Center,
+  Select,
 } from "@chakra-ui/react";
-
-import { Select } from "@chakra-ui/react";
 
 function App() {
   const [buyRates, setBuyRates] = useState([]);
@@ -189,12 +188,12 @@ function App() {
   return (
     <ChakraProvider>
       <Container maxW="1000px">
-        <Center m="10">
+        <Center mt="10">
           <Heading textAlign="center">
-            Sri Lankan Currency Exchange Rate Calculator
+            Sri Lankan Exchange Rate Calculator
           </Heading>
         </Center>
-        <Center m="2">
+        <Center mt="5">
           <Text fontSize="md">Last updated time: {lastUpdatedTime}</Text>
         </Center>
         <FormControl>
