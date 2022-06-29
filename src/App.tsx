@@ -181,7 +181,7 @@ function App() {
         }
       });
     }
-    data.sort((a, b) => b.rate - a.rate);
+    data.sort((a, b) => b.amount - a.amount);
     setTableData(data);
   };
 
@@ -218,7 +218,7 @@ function App() {
             ))}
           </Select>
           <FormLabel htmlFor="number" mt="5">
-            Currency you wanna exchange
+            Currency you want
           </FormLabel>
           <Select
             onChange={changeTargetCurrency}
